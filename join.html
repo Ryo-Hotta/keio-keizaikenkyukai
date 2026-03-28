@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us | 慶應経済研究会</title>
+  <meta name="description" content="慶應経済研究会への入会案内。公式LINEから簡単に入会できます。">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { navy: '#0d1b2a', 'navy-light': '#1b2d45', gold: '#c9a227', 'gold-light': '#d4af37', 'keio-red': '#A61D33', 'keio-red-light': '#c42a42', cream: '#f7f5f2', charcoal: '#1a1a1a' },
+        fontFamily: { serif: ['"Noto Serif JP"', '"Cormorant Garamond"', 'serif'], sans: ['"Noto Sans JP"', 'sans-serif'], display: ['"Cormorant Garamond"', '"Noto Serif JP"', 'serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-charcoal bg-white">
+
+  <!-- ナビゲーション -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-navy/95 backdrop-blur-sm border-b border-gold/10">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3"><img src="logo.svg" alt="慶應経済研究会ロゴ" class="nav-logo"></a>
+      <ul class="hidden md:flex items-center gap-7 text-sm">
+        <li><a href="about.html" class="text-white/70 hover:text-gold transition-colors duration-300">About</a></li>
+        <li><a href="activities.html" class="text-white/70 hover:text-gold transition-colors duration-300">Activities</a></li>
+        <li><a href="events.html" class="text-white/70 hover:text-gold transition-colors duration-300">Events</a></li>
+        <li><a href="members.html" class="text-white/70 hover:text-gold transition-colors duration-300">Members</a></li>
+        <li><a href="instagram.html" class="text-white/70 hover:text-gold transition-colors duration-300">Instagram</a></li>
+        <li><a href="join.html" class="bg-keio-red-light text-white px-5 py-2 rounded transition-colors duration-300 text-sm font-medium">入会する</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden text-white text-2xl" aria-label="メニュー"><span id="menuIcon">&#9776;</span></button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu md:hidden bg-navy-light border-t border-gold/10">
+      <div class="px-4 py-4 space-y-3">
+        <a href="about.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">About</a>
+        <a href="activities.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Activities</a>
+        <a href="events.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Events</a>
+        <a href="members.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Members</a>
+        <a href="instagram.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Instagram</a>
+        <a href="join.html" class="inline-block bg-keio-red-light text-white px-5 py-2 rounded text-sm font-medium mt-2 mobile-link">入会する</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ページヒーロー -->
+  <section class="page-hero bg-navy pt-32 pb-20 text-center">
+    <div class="max-w-4xl mx-auto px-4 fade-in">
+      <p class="font-display text-gold tracking-[0.2em] text-sm md:text-base mb-4">JOIN US</p>
+      <h1 class="font-serif text-white text-3xl md:text-4xl mb-6">入会案内</h1>
+      <p class="text-white/60 text-base md:text-lg leading-relaxed">学部・学年は問いません。「やってみたい」——それだけで十分です。</p>
+    </div>
+  </section>
+
+  <!-- 入会メッセージ -->
+  <section class="bg-cream py-20">
+    <div class="max-w-3xl mx-auto px-4 text-center fade-in">
+      <h2 class="font-serif text-2xl md:text-3xl mb-8">あなたの参加を、<br class="md:hidden">待っています。</h2>
+      <p class="text-charcoal/70 text-base md:text-lg leading-loose">
+        「起業やビジネスに興味がある」「同じ志の仲間がほしい」——それだけで十分です。<br>
+        まずは気軽に公式LINEから連絡ください。
+      </p>
+    </div>
+  </section>
+
+  <!-- 入会フロー -->
+  <section class="bg-white py-20">
+    <div class="max-w-4xl mx-auto px-4 fade-in">
+      <h2 class="font-serif text-2xl md:text-3xl text-center mb-14">入会までの流れ</h2>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-4">
+        <!-- Step 1 -->
+        <div class="bg-white rounded-lg px-6 py-8 shadow-sm border border-gray-100 text-center w-full md:w-1/3">
+          <p class="text-gold font-serif text-3xl font-semibold mb-3">01</p>
+          <p class="font-medium text-charcoal">公式LINEを<br>友だち追加</p>
+        </div>
+        <!-- 矢印 -->
+        <div class="text-gold text-2xl font-bold hidden md:block">&rarr;</div>
+        <div class="text-gold text-2xl font-bold md:hidden">&darr;</div>
+        <!-- Step 2 -->
+        <div class="bg-white rounded-lg px-6 py-8 shadow-sm border border-gray-100 text-center w-full md:w-1/3">
+          <p class="text-gold font-serif text-3xl font-semibold mb-3">02</p>
+          <p class="font-medium text-charcoal">フォームに回答</p>
+        </div>
+        <!-- 矢印 -->
+        <div class="text-gold text-2xl font-bold hidden md:block">&rarr;</div>
+        <div class="text-gold text-2xl font-bold md:hidden">&darr;</div>
+        <!-- Step 3 -->
+        <div class="bg-white rounded-lg px-6 py-8 shadow-sm border border-gray-100 text-center w-full md:w-1/3">
+          <p class="text-gold font-serif text-3xl font-semibold mb-3">03</p>
+          <p class="font-medium text-charcoal">入会完了！<br>活動スタート</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LINE CTA -->
+  <section class="bg-white pb-20">
+    <div class="max-w-2xl mx-auto px-4 text-center fade-in">
+      <a href="https://line.me/" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center gap-3 bg-[#06C755] hover:bg-[#05b34c] text-white text-lg md:text-xl font-medium px-10 py-5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+        </svg>
+        公式LINEで入会する
+      </a>
+      <p class="text-charcoal/50 text-sm mt-5">QRコードはInstagramのハイライトからも確認できます</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-cream py-20">
+    <div class="max-w-3xl mx-auto px-4 fade-in">
+      <h2 class="font-serif text-2xl md:text-3xl text-center mb-14">よくある質問</h2>
+      <div class="space-y-5">
+        <!-- Q1 -->
+        <div class="bg-white rounded-lg p-6 shadow-sm">
+          <p class="font-medium text-charcoal mb-3">Q. 経済学部じゃなくても入れますか？</p>
+          <p class="text-charcoal/60 leading-relaxed">はい、学部は問いません。ビジネスに興味があればどなたでも歓迎です。</p>
+        </div>
+        <!-- Q2 -->
+        <div class="bg-white rounded-lg p-6 shadow-sm">
+          <p class="font-medium text-charcoal mb-3">Q. 活動頻度はどのくらいですか？</p>
+          <p class="text-charcoal/60 leading-relaxed">定例会は週1回程度、講演会やワークショップは月に1回程度です。強制参加ではないので、自分のペースで参加できます。</p>
+        </div>
+        <!-- Q3 -->
+        <div class="bg-white rounded-lg p-6 shadow-sm">
+          <p class="font-medium text-charcoal mb-3">Q. 費用はかかりますか？</p>
+          <p class="text-charcoal/60 leading-relaxed">基本的な活動費は無料です。一部イベントで実費がかかる場合があります。</p>
+        </div>
+        <!-- Q4 -->
+        <div class="bg-white rounded-lg p-6 shadow-sm">
+          <p class="font-medium text-charcoal mb-3">Q. 途中から入会できますか？</p>
+          <p class="text-charcoal/60 leading-relaxed">はい、随時入会を受け付けています。公式LINEからお気軽にお問い合わせください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 最後のCTA -->
+  <section class="bg-navy py-24">
+    <div class="max-w-3xl mx-auto px-4 text-center fade-in">
+      <p class="font-serif text-white text-2xl md:text-3xl mb-10">すべては、行動からはじまる。</p>
+      <a href="https://line.me/" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center gap-3 bg-[#06C755] hover:bg-[#05b34c] text-white text-lg md:text-xl font-medium px-10 py-5 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+        </svg>
+        公式LINEで入会する
+      </a>
+      <div class="mt-8">
+        <a href="https://www.instagram.com/keiokeizaikenkyukai/" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 text-white/50 hover:text-gold transition-colors duration-300 text-sm">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          Instagramもチェック
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-navy py-12 border-t border-gold/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+          <img src="logo.svg" alt="慶應経済研究会" class="footer-logo mb-2 mx-auto md:mx-0">
+          <p class="text-white/30 font-display text-xs tracking-wider">Keio University Economics & Business Lab</p>
+        </div>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="about.html" class="text-white/40 hover:text-gold transition-colors">About</a>
+          <a href="activities.html" class="text-white/40 hover:text-gold transition-colors">Activities</a>
+          <a href="events.html" class="text-white/40 hover:text-gold transition-colors">Events</a>
+          <a href="members.html" class="text-white/40 hover:text-gold transition-colors">Members</a>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://www.instagram.com/keiokeizaikenkyukai/" target="_blank" rel="noopener noreferrer" class="text-white/40 hover:text-gold transition-colors duration-300 text-sm">Instagram</a>
+          <a href="join.html" class="text-white/40 hover:text-gold transition-colors duration-300 text-sm">公式LINE</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-white/5 text-center"><p class="text-white/20 text-xs">&copy; 2026 慶應経済研究会 All Rights Reserved.</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

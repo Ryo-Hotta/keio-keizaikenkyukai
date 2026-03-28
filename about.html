@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | 慶應経済研究会</title>
+  <meta name="description" content="慶應経済研究会の団体概要。慶應生によるビジネス分野のコミュニティです。">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0d1b2a',
+            'navy-light': '#1b2d45',
+            gold: '#c9a227',
+            'gold-light': '#d4af37',
+            'keio-red': '#A61D33',
+            'keio-red-light': '#c42a42',
+            cream: '#f7f5f2',
+            charcoal: '#1a1a1a',
+          },
+          fontFamily: {
+            serif: ['"Noto Serif JP"', '"Cormorant Garamond"', 'serif'],
+            sans: ['"Noto Sans JP"', 'sans-serif'],
+            display: ['"Cormorant Garamond"', '"Noto Serif JP"', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans text-charcoal bg-white">
+
+  <!-- ========== ナビゲーション ========== -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-navy/95 backdrop-blur-sm border-b border-gold/10">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="logo.svg" alt="慶應経済研究会ロゴ" class="nav-logo">
+      </a>
+      <ul class="hidden md:flex items-center gap-7 text-sm">
+        <li><a href="about.html" class="nav-active text-white/70 hover:text-gold transition-colors duration-300">About</a></li>
+        <li><a href="activities.html" class="text-white/70 hover:text-gold transition-colors duration-300">Activities</a></li>
+        <li><a href="events.html" class="text-white/70 hover:text-gold transition-colors duration-300">Events</a></li>
+        <li><a href="members.html" class="text-white/70 hover:text-gold transition-colors duration-300">Members</a></li>
+        <li><a href="instagram.html" class="text-white/70 hover:text-gold transition-colors duration-300">Instagram</a></li>
+        <li><a href="join.html" class="bg-keio-red hover:bg-keio-red-light text-white px-5 py-2 rounded transition-colors duration-300 text-sm font-medium">入会する</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden text-white text-2xl" aria-label="メニュー"><span id="menuIcon">&#9776;</span></button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu md:hidden bg-navy-light border-t border-gold/10">
+      <div class="px-4 py-4 space-y-3">
+        <a href="about.html" class="block text-gold text-sm py-1 mobile-link">About</a>
+        <a href="activities.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Activities</a>
+        <a href="events.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Events</a>
+        <a href="members.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Members</a>
+        <a href="instagram.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Instagram</a>
+        <a href="join.html" class="inline-block bg-keio-red text-white px-5 py-2 rounded text-sm font-medium mt-2 mobile-link">入会する</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== ページヒーロー ========== -->
+  <section class="page-hero bg-navy flex items-center justify-center text-center">
+    <div class="max-w-6xl mx-auto px-4 py-20">
+      <p class="font-display text-gold text-sm tracking-[0.2em] mb-4 fade-in">ABOUT US</p>
+      <h1 class="font-serif text-white text-3xl md:text-4xl fade-in">慶應経済研究会とは</h1>
+    </div>
+  </section>
+
+  <!-- ========== セクション1: 団体概要 ========== -->
+  <section class="bg-cream py-20">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-14 items-center">
+        <!-- 左テキスト (7カラム) -->
+        <div class="md:col-span-7 space-y-6 fade-in">
+          <p class="text-lg md:text-xl leading-relaxed font-light">
+            慶應経済研究会は、「ビジネスに興味はあるけど、何から始めればいいか分からない」——そんな慶應生のための場所です。
+          </p>
+          <p class="text-base leading-relaxed text-charcoal/80">
+            起業家を招いた講演会、実際にチームでビジネスプランを考えるワークショップ、同じ志を持つ仲間との交流。教科書だけじゃ分からない「リアルなビジネス」に触れる機会を、自分たちの手で作っています。
+          </p>
+          <p class="text-base leading-relaxed text-charcoal/80">
+            難しい話を偉そうにする団体じゃありません。「面白そう」から始まって、気がついたら本気になってた——そういう場所を目指しています。
+          </p>
+        </div>
+        <!-- 右写真プレースホルダー (5カラム) -->
+        <div class="md:col-span-5 fade-in">
+          <div class="bg-navy-light rounded-xl aspect-[4/5] flex items-center justify-center transform rotate-1 shadow-lg">
+            <p class="text-white/40 text-sm font-light tracking-wide">起業体験ワークショップ集合写真</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 数字カード -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16">
+        <div class="bg-white rounded-xl p-8 text-center shadow-sm card-tilt fade-in">
+          <p class="font-display text-4xl md:text-5xl text-gold font-semibold">17+</p>
+          <p class="text-charcoal/60 text-sm mt-2">投稿・活動実績</p>
+        </div>
+        <div class="bg-white rounded-xl p-8 text-center shadow-sm card-tilt fade-in">
+          <p class="font-display text-4xl md:text-5xl text-gold font-semibold">1,800+</p>
+          <p class="text-charcoal/60 text-sm mt-2">フォロワー</p>
+        </div>
+        <div class="bg-white rounded-xl p-8 text-center shadow-sm card-tilt fade-in">
+          <p class="font-display text-4xl md:text-5xl text-gold font-semibold">15+</p>
+          <p class="text-charcoal/60 text-sm mt-2">アクティブメンバー</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== セクション2: ミッション・ビジョン ========== -->
+  <section class="bg-white py-20">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="font-display text-gold text-sm tracking-[0.2em] mb-4 fade-in">MISSION</p>
+      <h2 class="font-serif text-2xl md:text-3xl mb-8 fade-in">団体の理念</h2>
+      <blockquote class="fade-in">
+        <p class="font-serif text-3xl md:text-4xl text-navy leading-snug mb-8">
+          すべては、行動からはじまる。
+        </p>
+      </blockquote>
+      <div class="max-w-2xl mx-auto space-y-5 fade-in">
+        <p class="text-charcoal/70 leading-relaxed">
+          知識だけなら、本を読めばいい。でも「自分で動く」経験は、誰かと一緒じゃないと始められないこともある。
+        </p>
+        <p class="text-charcoal/70 leading-relaxed">
+          慶應経済研究会は、まだ何者でもない学生が一歩踏み出すための場所です。失敗しても笑い合える仲間がいて、挑戦を応援してくれる先輩がいる。そういう環境から、次の時代をつくる人が生まれると信じています。
+        </p>
+        <p class="text-charcoal/70 leading-relaxed">
+          完璧じゃなくていい。まず、動いてみる。その最初の一歩を、一緒に。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== セクション3: 団体情報 ========== -->
+  <section class="bg-cream py-20">
+    <div class="max-w-4xl mx-auto px-4">
+      <p class="font-display text-gold text-sm tracking-[0.2em] mb-4 text-center fade-in">INFORMATION</p>
+      <h2 class="font-serif text-2xl md:text-3xl mb-12 text-center fade-in">団体情報</h2>
+      <dl class="divide-y divide-charcoal/10 fade-in">
+        <div class="flex flex-col sm:flex-row py-5 gap-2">
+          <dt class="sm:w-48 text-charcoal/50 text-sm font-medium shrink-0">正式名称</dt>
+          <dd class="text-base">慶應経済研究会</dd>
+        </div>
+        <div class="flex flex-col sm:flex-row py-5 gap-2">
+          <dt class="sm:w-48 text-charcoal/50 text-sm font-medium shrink-0">英語名</dt>
+          <dd class="text-base">Keio University Economics and Business Lab</dd>
+        </div>
+        <div class="flex flex-col sm:flex-row py-5 gap-2">
+          <dt class="sm:w-48 text-charcoal/50 text-sm font-medium shrink-0">所属</dt>
+          <dd class="text-base">慶應義塾大学</dd>
+        </div>
+        <div class="flex flex-col sm:flex-row py-5 gap-2">
+          <dt class="sm:w-48 text-charcoal/50 text-sm font-medium shrink-0">Instagram</dt>
+          <dd class="text-base"><a href="https://www.instagram.com/keiokeizaikenkyukai/" target="_blank" rel="noopener noreferrer" class="text-gold hover:text-gold-light transition-colors">@keiokeizaikenkyukai</a></dd>
+        </div>
+        <div class="flex flex-col sm:flex-row py-5 gap-2">
+          <dt class="sm:w-48 text-charcoal/50 text-sm font-medium shrink-0">連絡先</dt>
+          <dd class="text-base">公式LINEよりお問い合わせください</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ========== CTA: 入会案内 ========== -->
+  <section class="bg-navy py-20">
+    <div class="max-w-3xl mx-auto px-4 text-center">
+      <p class="font-display text-gold text-sm tracking-[0.2em] mb-4 fade-in">JOIN US</p>
+      <h2 class="font-serif text-white text-2xl md:text-3xl mb-4 fade-in">興味を持ったら、まず一歩。</h2>
+      <p class="text-white/60 mb-10 fade-in">入会は公式LINEから受け付けています。気軽にご連絡ください。</p>
+      <div class="fade-in">
+        <a href="join.html" class="inline-block bg-keio-red hover:bg-keio-red-light text-white px-10 py-4 rounded text-base font-medium transition-colors duration-300">入会案内を見る</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== フッター ========== -->
+  <footer class="bg-navy py-12 border-t border-gold/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+          <img src="logo.svg" alt="慶應経済研究会" class="footer-logo mb-2 mx-auto md:mx-0">
+          <p class="text-white/30 font-display text-xs tracking-wider">Keio University Economics & Business Lab</p>
+        </div>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="about.html" class="text-white/40 hover:text-gold transition-colors">About</a>
+          <a href="activities.html" class="text-white/40 hover:text-gold transition-colors">Activities</a>
+          <a href="events.html" class="text-white/40 hover:text-gold transition-colors">Events</a>
+          <a href="members.html" class="text-white/40 hover:text-gold transition-colors">Members</a>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://www.instagram.com/keiokeizaikenkyukai/" target="_blank" rel="noopener noreferrer" class="text-white/40 hover:text-gold transition-colors duration-300 text-sm">Instagram</a>
+          <a href="join.html" class="text-white/40 hover:text-gold transition-colors duration-300 text-sm">公式LINE</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-white/5 text-center">
+        <p class="text-white/20 text-xs">&copy; 2026 慶應経済研究会 All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

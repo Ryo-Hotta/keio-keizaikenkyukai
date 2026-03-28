@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | 慶應経済研究会</title>
+  <meta name="description" content="慶應経済研究会のイベント情報。社長講演会、ワークショップなど。">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { navy: '#0d1b2a', 'navy-light': '#1b2d45', gold: '#c9a227', 'gold-light': '#d4af37', 'keio-red': '#A61D33', 'keio-red-light': '#c42a42', cream: '#f7f5f2', charcoal: '#1a1a1a' },
+        fontFamily: { serif: ['"Noto Serif JP"', '"Cormorant Garamond"', 'serif'], sans: ['"Noto Sans JP"', 'sans-serif'], display: ['"Cormorant Garamond"', '"Noto Serif JP"', 'serif'] }
+      }}
+    }
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans text-charcoal bg-white">
+
+  <!-- ========== ナビゲーション ========== -->
+  <nav class="fixed top-0 left-0 w-full z-50 bg-navy/95 backdrop-blur-sm border-b border-gold/10">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-3"><img src="logo.svg" alt="慶應経済研究会ロゴ" class="nav-logo"></a>
+      <ul class="hidden md:flex items-center gap-7 text-sm">
+        <li><a href="about.html" class="text-white/70 hover:text-gold transition-colors duration-300">About</a></li>
+        <li><a href="activities.html" class="text-white/70 hover:text-gold transition-colors duration-300">Activities</a></li>
+        <li><a href="events.html" class="nav-active text-white/70 hover:text-gold transition-colors duration-300">Events</a></li>
+        <li><a href="members.html" class="text-white/70 hover:text-gold transition-colors duration-300">Members</a></li>
+        <li><a href="instagram.html" class="text-white/70 hover:text-gold transition-colors duration-300">Instagram</a></li>
+        <li><a href="join.html" class="bg-keio-red hover:bg-keio-red-light text-white px-5 py-2 rounded transition-colors duration-300 text-sm font-medium">入会する</a></li>
+      </ul>
+      <button id="menuBtn" class="md:hidden text-white text-2xl" aria-label="メニュー"><span id="menuIcon">&#9776;</span></button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu md:hidden bg-navy-light border-t border-gold/10">
+      <div class="px-4 py-4 space-y-3">
+        <a href="about.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">About</a>
+        <a href="activities.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Activities</a>
+        <a href="events.html" class="block text-gold text-sm py-1 mobile-link">Events</a>
+        <a href="members.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Members</a>
+        <a href="instagram.html" class="block text-white/80 hover:text-gold text-sm py-1 mobile-link">Instagram</a>
+        <a href="join.html" class="inline-block bg-keio-red text-white px-5 py-2 rounded text-sm font-medium mt-2 mobile-link">入会する</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== ページヒーロー ========== -->
+  <section class="page-hero bg-navy pt-[64px] flex flex-col items-center justify-center text-center px-4">
+    <p class="font-display text-gold tracking-[0.2em] text-sm md:text-base mb-4 fade-in">EVENTS</p>
+    <h1 class="font-serif text-white text-3xl md:text-4xl fade-in">開催イベント</h1>
+  </section>
+
+  <!-- ========== Upcoming Events ========== -->
+  <section class="bg-cream py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="font-display text-gold tracking-[0.15em] text-sm mb-2 fade-in">UPCOMING</h2>
+      <p class="font-serif text-2xl md:text-3xl mb-12 fade-in">今後のイベント</p>
+
+      <!-- Upcoming Card 1 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden mb-8 fade-in card-tilt">
+        <div class="md:flex">
+          <div class="md:w-48 bg-keio-red/10 flex flex-col items-center justify-center p-6 md:p-8">
+            <span class="text-keio-red font-bold text-3xl md:text-4xl leading-none">4月</span>
+            <span class="text-keio-red/70 text-sm mt-1">TBD</span>
+          </div>
+          <div class="p-6 md:p-8 flex-1">
+            <span class="inline-block bg-keio-red/20 text-keio-red text-xs font-medium px-3 py-1 rounded-full mb-3">新歓</span>
+            <h3 class="font-serif text-xl md:text-2xl mb-3">2026年度 新歓説明会</h3>
+            <p class="text-charcoal/70 leading-relaxed">新入生向け。慶應経済研究会の活動内容や入会方法を紹介します。これから始まるサークル生活の第一歩を、ぜひ私たちと一緒に踏み出しましょう。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Upcoming Card 2 -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden fade-in card-tilt">
+        <div class="md:flex">
+          <div class="md:w-48 bg-gold/10 flex flex-col items-center justify-center p-6 md:p-8">
+            <span class="text-gold font-bold text-3xl md:text-4xl leading-none">5月</span>
+            <span class="text-gold/70 text-sm mt-1">TBD</span>
+          </div>
+          <div class="p-6 md:p-8 flex-1">
+            <span class="inline-block bg-gold/15 text-gold text-xs font-medium px-3 py-1 rounded-full mb-3">講演会</span>
+            <h3 class="font-serif text-xl md:text-2xl mb-3">第2回 社長講演会</h3>
+            <p class="text-charcoal/70 leading-relaxed">ゲストスピーカーを招いた特別講演。詳細は公式LINEで告知します。前回に引き続き、ビジネスの最前線で活躍する方のリアルな声をお届けします。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Past Events ========== -->
+  <section class="bg-white py-20 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="font-display text-gold tracking-[0.15em] text-sm mb-2 fade-in">PAST EVENTS</h2>
+      <p class="font-serif text-2xl md:text-3xl mb-12 fade-in">これまでの活動</p>
+
+      <!-- Timeline -->
+      <div class="relative border-l-2 border-gold/20 ml-4 md:ml-8 pl-8 md:pl-12 space-y-12">
+
+        <!-- Past Event 1 -->
+        <div class="relative fade-in">
+          <!-- Timeline dot -->
+          <div class="absolute -left-[calc(2rem+5px)] md:-left-[calc(3rem+5px)] top-1 w-3 h-3 bg-gold rounded-full border-2 border-white shadow"></div>
+          <div class="flex items-center gap-3 mb-3">
+            <span class="inline-block bg-gold/10 text-gold text-xs font-medium px-3 py-1 rounded-full">2025</span>
+            <span class="text-charcoal/40 text-sm">講演会</span>
+          </div>
+          <h3 class="font-serif text-xl md:text-2xl mb-3">第1回 社長講演会</h3>
+          <p class="text-charcoal/70 leading-relaxed mb-4">ゲスト：山本康二氏。起業のリアルを語っていただきました。参加者からは「起業を身近に感じられた」「実体験に基づく話が刺さった」と好評でした。</p>
+          <!-- 写真プレースホルダー -->
+          <div class="bg-cream rounded-lg overflow-hidden aspect-video max-w-md flex items-center justify-center">
+            <div class="text-center py-12 px-4">
+              <svg class="w-12 h-12 mx-auto text-charcoal/20 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+              <p class="text-charcoal/30 text-sm">講演の様子</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Past Event 2 -->
+        <div class="relative fade-in">
+          <div class="absolute -left-[calc(2rem+5px)] md:-left-[calc(3rem+5px)] top-1 w-3 h-3 bg-gold rounded-full border-2 border-white shadow"></div>
+          <div class="flex items-center gap-3 mb-3">
+            <span class="inline-block bg-gold/10 text-gold text-xs font-medium px-3 py-1 rounded-full">2025</span>
+            <span class="text-charcoal/40 text-sm">ワークショップ</span>
+          </div>
+          <h3 class="font-serif text-xl md:text-2xl mb-3">起業体験ワークショップ</h3>
+          <p class="text-charcoal/70 leading-relaxed mb-4">15名が参加。チーム対抗でビジネスプランを発表しました。短時間でアイデアを形にする経験は、参加者全員にとって大きな刺激になりました。</p>
+          <!-- 写真プレースホルダー -->
+          <div class="bg-cream rounded-lg overflow-hidden aspect-video max-w-md flex items-center justify-center">
+            <div class="text-center py-12 px-4">
+              <svg class="w-12 h-12 mx-auto text-charcoal/20 mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+              <p class="text-charcoal/30 text-sm">集合写真</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Past Event 3 -->
+        <div class="relative fade-in">
+          <div class="absolute -left-[calc(2rem+5px)] md:-left-[calc(3rem+5px)] top-1 w-3 h-3 bg-gold rounded-full border-2 border-white shadow"></div>
+          <div class="flex items-center gap-3 mb-3">
+            <span class="inline-block bg-gold/10 text-gold text-xs font-medium px-3 py-1 rounded-full">2025</span>
+            <span class="text-charcoal/40 text-sm">交流会</span>
+          </div>
+          <h3 class="font-serif text-xl md:text-2xl mb-3">メンバー交流会</h3>
+          <p class="text-charcoal/70 leading-relaxed">初顔合わせ。自己紹介とフリートーク。学部や学年を超えて、リラックスした雰囲気のなかで交流を深めました。</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA ========== -->
+  <section class="bg-navy py-20 px-4">
+    <div class="max-w-2xl mx-auto text-center fade-in">
+      <p class="font-display text-gold tracking-[0.15em] text-sm mb-4">STAY UPDATED</p>
+      <h2 class="font-serif text-white text-2xl md:text-3xl mb-4">最新情報は公式LINEで</h2>
+      <p class="text-white/60 leading-relaxed mb-8">イベントの詳細や参加申し込みは、公式LINEでいち早くお届けしています。</p>
+      <a href="join.html" class="inline-block bg-keio-red hover:bg-keio-red-light text-white px-8 py-3 rounded-lg transition-colors duration-300 font-medium">公式LINEを追加する</a>
+    </div>
+  </section>
+
+  <!-- ========== フッター ========== -->
+  <footer class="bg-navy py-12 border-t border-gold/10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+          <img src="logo.svg" alt="慶應経済研究会" class="footer-logo mb-2 mx-auto md:mx-0">
+          <p class="text-white/30 font-display text-xs tracking-wider">Keio University Economics & Business Lab</p>
+        </div>
+        <div class="flex items-center gap-6 text-sm">
+          <a href="about.html" class="text-white/40 hover:text-gold transition-colors">About</a>
+          <a href="activities.html" class="text-white/40 hover:text-gold transition-colors">Activities</a>
+          <a href="events.html" class="text-white/40 hover:text-gold transition-colors">Events</a>
+          <a href="members.html" class="text-white/40 hover:text-gold transition-colors">Members</a>
+        </div>
+        <div class="flex items-center gap-6">
+          <a href="https://www.instagram.com/keiokeizaikenkyukai/" target="_blank" rel="noopener noreferrer" class="text-white/40 hover:text-gold transition-colors duration-300 text-sm">Instagram</a>
+          <a href="join.html" class="text-white/40 hover:text-gold transition-colors duration-300 text-sm">公式LINE</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-white/5 text-center"><p class="text-white/20 text-xs">&copy; 2026 慶應経済研究会 All Rights Reserved.</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
