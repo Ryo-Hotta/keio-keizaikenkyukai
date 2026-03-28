@@ -74,6 +74,10 @@
 
   <!-- ========== Hero ========== -->
   <section class="relative min-h-screen flex items-center justify-center bg-navy overflow-hidden">
+    <!-- 背景Canva画像（薄く表示） -->
+    <div class="absolute inset-0 pointer-events-none">
+      <img src="images/16.svg" alt="メッセージ背景" class="w-full h-full object-cover opacity-[0.06]">
+    </div>
     <!-- 金粒子 -->
     <div class="absolute inset-0 pointer-events-none">
       <div class="particle"></div><div class="particle"></div><div class="particle"></div>
@@ -127,43 +131,59 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
         <!-- About カード -->
-        <a href="about.html" class="card-tilt bg-white rounded-xl p-7 shadow-sm border border-charcoal/5 group fade-in block">
-          <div class="text-2xl mb-4 opacity-80">&#128218;</div>
-          <h3 class="font-serif text-charcoal text-lg mb-2 group-hover:text-gold transition-colors duration-300">About</h3>
-          <p class="text-charcoal/55 text-sm leading-relaxed mb-4">
-            「ビジネスに興味はあるけど、何から始めれば？」そんな慶應生のための場所です。
-          </p>
-          <span class="text-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">詳しく見る &#8594;</span>
+        <a href="about.html" class="card-tilt bg-white rounded-xl shadow-sm border border-charcoal/5 group fade-in block overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="images/2.svg" alt="団体概要" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-7">
+            <h3 class="font-serif text-charcoal text-lg mb-2 group-hover:text-gold transition-colors duration-300">About</h3>
+            <p class="text-charcoal/55 text-sm leading-relaxed mb-4">
+              「ビジネスに興味はあるけど、何から始めれば？」そんな慶應生のための場所です。
+            </p>
+            <span class="text-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">詳しく見る &#8594;</span>
+          </div>
         </a>
 
         <!-- Activities カード -->
-        <a href="activities.html" class="card-tilt bg-white rounded-xl p-7 shadow-sm border border-charcoal/5 group fade-in block">
-          <div class="text-2xl mb-4 opacity-80">&#128736;</div>
-          <h3 class="font-serif text-charcoal text-lg mb-2 group-hover:text-gold transition-colors duration-300">Activities</h3>
-          <p class="text-charcoal/55 text-sm leading-relaxed mb-4">
-            社長講演会、起業体験ワークショップ、勉強会。座学だけじゃ物足りない人へ。
-          </p>
-          <span class="text-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">詳しく見る &#8594;</span>
+        <a href="activities.html" class="card-tilt bg-white rounded-xl shadow-sm border border-charcoal/5 group fade-in block overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="images/11.svg" alt="社長講演会" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-7">
+            <h3 class="font-serif text-charcoal text-lg mb-2 group-hover:text-gold transition-colors duration-300">Activities</h3>
+            <p class="text-charcoal/55 text-sm leading-relaxed mb-4">
+              社長講演会、起業体験ワークショップ、勉強会。座学だけじゃ物足りない人へ。
+            </p>
+            <span class="text-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">詳しく見る &#8594;</span>
+          </div>
         </a>
 
         <!-- Events カード -->
-        <a href="events.html" class="card-tilt bg-navy rounded-xl p-7 shadow-md group fade-in block">
-          <div class="text-2xl mb-4 opacity-80">&#127880;</div>
-          <h3 class="font-serif text-white text-lg mb-2 group-hover:text-gold transition-colors duration-300">Events</h3>
-          <p class="text-white/50 text-sm leading-relaxed mb-4">
-            直近の新歓説明会や講演会の情報をまとめています。参加は誰でもOK。
-          </p>
-          <span class="text-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">詳しく見る &#8594;</span>
+        <a href="events.html" class="card-tilt bg-navy rounded-xl shadow-md group fade-in block overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="images/1.svg" alt="入会案内・イベント情報" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-7">
+            <h3 class="font-serif text-white text-lg mb-2 group-hover:text-gold transition-colors duration-300">Events</h3>
+            <p class="text-white/50 text-sm leading-relaxed mb-4">
+              直近の新歓説明会や講演会の情報をまとめています。参加は誰でもOK。
+            </p>
+            <span class="text-gold text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">詳しく見る &#8594;</span>
+          </div>
         </a>
 
         <!-- Join Us カード -->
-        <a href="join.html" class="card-tilt bg-white rounded-xl p-7 shadow-sm border border-keio-red/15 group fade-in block">
-          <div class="text-2xl mb-4 opacity-80">&#9997;&#65039;</div>
-          <h3 class="font-serif text-charcoal text-lg mb-2 group-hover:text-keio-red transition-colors duration-300">Join Us</h3>
-          <p class="text-charcoal/55 text-sm leading-relaxed mb-4">
-            学部・学年不問。「やってみたい」の気持ちだけ持ってきてください。
-          </p>
-          <span class="text-keio-red text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">入会する &#8594;</span>
+        <a href="join.html" class="card-tilt bg-white rounded-xl shadow-sm border border-keio-red/15 group fade-in block overflow-hidden">
+          <div class="aspect-[4/3] overflow-hidden">
+            <img src="images/1.svg" alt="入会案内" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <div class="p-7">
+            <h3 class="font-serif text-charcoal text-lg mb-2 group-hover:text-keio-red transition-colors duration-300">Join Us</h3>
+            <p class="text-charcoal/55 text-sm leading-relaxed mb-4">
+              学部・学年不問。「やってみたい」の気持ちだけ持ってきてください。
+            </p>
+            <span class="text-keio-red text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">入会する &#8594;</span>
+          </div>
         </a>
       </div>
     </div>
@@ -172,6 +192,10 @@
 
   <!-- ========== 引用セクション ========== -->
   <section class="py-20 md:py-28 bg-navy relative overflow-hidden">
+    <!-- 背景Canva画像（薄く表示） -->
+    <div class="absolute inset-0 pointer-events-none">
+      <img src="images/19.svg" alt="名言背景" class="w-full h-full object-cover opacity-[0.07]">
+    </div>
     <div class="absolute top-0 left-0 w-[40%] h-full bg-gradient-to-r from-gold/5 to-transparent"></div>
     <div class="max-w-3xl mx-auto px-4 text-center relative z-10 fade-in">
       <div class="text-gold/30 text-6xl font-display mb-6">&ldquo;</div>
